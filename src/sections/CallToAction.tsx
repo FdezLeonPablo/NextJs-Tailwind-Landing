@@ -16,7 +16,7 @@ export const CallToAction = () => {
   const translateY = useTransform(scrollYProgress, [0, 1], [150, -150]);
   return (
   <section ref={sectionRef} 
-  className="bg-gradient-to-b from-white to-[#d2dcff] py-24">
+  className="bg-gradient-to-b from-white to-[#d2dcff] py-24 overflow-clip">
       <div className="container">
         <div className='section-heading relative'>
           <h2 className="section-title"> Sign up for free today</h2>
@@ -27,7 +27,7 @@ export const CallToAction = () => {
             src={starImage.src}
             alt="Start Image"
             width={360}
-            className='absolute -left-[350px] -top-[137px]'
+            className="absolute -left-[350px] -top-[137px]"
             style={{ 
               translateY
             }}
@@ -36,7 +36,7 @@ export const CallToAction = () => {
             src={springImage.src}
             alt="Start Image"
             width={360}
-            className='absolute -right-[331px] -top-[19px]'
+            className="absolute -right-[331px] -top-[19px]"
             style={{ 
               translateY
             }}
